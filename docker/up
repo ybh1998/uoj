@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir -p /var/www/uoj/files/upload/
+chmod a+rw  /var/www/uoj/files/upload/
+
 service ntp start
 service apache2 start
 service mysql start
